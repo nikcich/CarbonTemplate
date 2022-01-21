@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import {
+  Button, InlineLoading, Accordion, AccordionItem, Tabs, Tab,
+
+} from 'carbon-components-react';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Tabs id='#'>
+        <Tab id="tab-1" label="tab1">
+          <Accordion>
+            <AccordionItem title="NUM 1">
+              <h2>Item 1</h2>
+            </AccordionItem>
+
+            <AccordionItem title="NUM 2">
+              <h2>Item 2</h2>
+            </AccordionItem>
+
+            <AccordionItem title="NUM 3">
+              <h2>Item 3</h2>
+            </AccordionItem>
+          </Accordion>
+        </Tab>
+
+        <Tab id="tab-2" label="tab3">
+          <h2>Heyyyy</h2>
+        </Tab>
+
+        <Tab id="tab-3" label="tab3">
+          <Button>Button</Button>
+          <InlineLoading></InlineLoading>
+        </Tab>
+
+
+
+
+
+      </Tabs>
+
+
+    </>
+
   );
 }
 
